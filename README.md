@@ -6,26 +6,23 @@ This project implements a fake news detection system using deep learning and nat
 
 2. FEATURES 
 
-Cleans and preprocesses news text using NLP techniques
+•Cleans and preprocesses news text using NLP techniques
 
-Uses an LSTM model for accurate classification
+•Uses an LSTM model for accurate classification
 
 Accepts input via:
 
-Raw text
+•Raw text
 
-File path
+•File path
 
-Web URL
+•Web URL
 
+•Automatically loads a saved model or trains a new one
 
-Automatically loads a saved model or trains a new one
+•Fetches and processes text from a URL
 
-Fetches and processes text from a URL
-
-Generates a confusion matrix to visualize performance
-
-
+•Generates a confusion matrix to visualize performance
 
 ---
 
@@ -35,53 +32,47 @@ Install the following dependencies using pip:
 
 pip install pandas numpy tensorflow matplotlib seaborn scikit-learn nltk beautifulsoup4 requests
 
-Ensure you have:
+---
 
-Python 3.7+
-
-Dataset files: Fake.csv and True.csv inside the data/ or root project folder
-
-
+4. DATASET FILES
+   
+Fake.csv and True.csv inside the data/ or root project folder
 
 ---
 
-4. How It Works
+5. How It Works
 
-Data Preprocessing
+Data Preprocessing:
 
-Converts text to lowercase
+•Converts text to lowercase
 
-Removes special characters and numbers
+•Removes special characters and numbers
 
-Applies lemmatization and stopword removal
+•Applies lemmatization and stopword removal
 
-Tokenizes and pads sequences for model input
+•Tokenizes and pads sequences for model input
 
+Model Architecture:
 
-Model Architecture
+•Embedding Layer
 
-Embedding Layer
+•LSTM Layer
 
-LSTM Layer
+•Dropout Layer
 
-Dropout Layer
+•Dense Output Layer (Sigmoid Activation)
 
-Dense Output Layer (Sigmoid Activation)
+•Trained for 5 epochs with batch size of 32
 
-Trained for 5 epochs with batch size of 32
+Model Handling:
 
+•If fake_news_model.h5 exists, it loads directly
 
-Model Handling
-
-If fake_news_model.h5 exists, it loads directly
-
-If not, the model trains from scratch and saves the trained version
-
-
+•If not, the model trains from scratch and saves the trained version
 
 ---
 
-5. Usage
+6. USAGE
 
 Running the Program
 
@@ -98,6 +89,7 @@ File path to a .txt file with news content
 URL of a news article (fetches and processes HTML content)
 
 ---
+
 Example Output
 
 Enter a news article (text, file path, or URL) or type 'exit' to stop:
