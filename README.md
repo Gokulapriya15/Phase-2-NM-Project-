@@ -4,25 +4,27 @@ EXPOSING THE TRUTH WITH ADVANCED FAKE NEWS DETECTION POWERED BY NATURAL LANGUAGE
 
 This project implements a fake news detection system using deep learning and natural language processing (NLP). It classifies news articles as "Real" or "Fake" based on their content using an LSTM-based neural network. The system supports multiple input methods and includes tools for model evaluation and retraining.
 
+---
+
 2. FEATURES 
 
-•Cleans and preprocesses news text using NLP techniques
+Cleans and preprocesses news text using NLP techniques
 
-•Uses an LSTM model for accurate classification
+Uses an LSTM model for accurate classification
 
 Accepts input via:
 
-•Raw text
+Raw text
 
-•File path
+File path
 
-•Web URL
+Web URL
 
-•Automatically loads a saved model or trains a new one
+Automatically loads a saved model or trains a new one
 
-•Fetches and processes text from a URL
+Fetches and processes text from a URL
 
-•Generates a confusion matrix to visualize performance
+Generates a confusion matrix to visualize performance
 
 ---
 
@@ -44,31 +46,31 @@ Fake.csv and True.csv inside the data/ or root project folder
 
 Data Preprocessing:
 
-•Converts text to lowercase
+Converts text to lowercase
 
-•Removes special characters and numbers
+Removes special characters and numbers
 
-•Applies lemmatization and stopword removal
+Applies lemmatization and stopword removal
 
-•Tokenizes and pads sequences for model input
+Tokenizes and pads sequences for model input
 
 Model Architecture:
 
-•Embedding Layer
+Embedding Layer
 
-•LSTM Layer
+LSTM Layer
 
-•Dropout Layer
+Dropout Layer
 
-•Dense Output Layer (Sigmoid Activation)
+Dense Output Layer (Sigmoid Activation)
 
-•Trained for 5 epochs with batch size of 32
+Trained for 5 epochs with batch size of 32
 
 Model Handling:
 
-•If fake_news_model.h5 exists, it loads directly
+If fake_news_model.h5 exists, it loads directly
 
-•If not, the model trains from scratch and saves the trained version
+If not, the model trains from scratch and saves the trained version
 
 ---
 
@@ -90,7 +92,7 @@ URL of a news article (fetches and processes HTML content)
 
 ---
 
-Example Output
+7. EXAMPLE OUTPUT 
 
 Enter a news article (text, file path, or URL) or type 'exit' to stop:
 https://example.com/fake-news-article
@@ -102,7 +104,7 @@ This news is FAKE
 
 ---
 
-Model Evaluation
+8. MODEL EVALUATION 
 
 After training, the script generates a confusion matrix:
 
