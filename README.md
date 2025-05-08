@@ -29,7 +29,7 @@ Generates a confusion matrix to visualize performance
 
 ---
 
-3. Requirements
+3. REQUIREMENTS 
 
 Install the following dependencies using pip:
 
@@ -97,7 +97,7 @@ File path to a .txt file with news content
 
 URL of a news article (fetches and processes HTML content)
 
-
+---
 Example Output
 
 Enter a news article (text, file path, or URL) or type 'exit' to stop:
@@ -120,10 +120,10 @@ plt.ylabel('Actual')
 plt.title('Confusion Matrix')
 plt.show()
 
-This helps visualize how well the model distinguishes between real and fake news.
+
 
 
 ---
 
-Would you like me to convert this into a formatted README.md file or help you deploy the model as a web app?
+
 
