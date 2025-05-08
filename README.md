@@ -14,11 +14,11 @@ Uses an LSTM model for accurate classification
 
 Accepts input via:
 
-Raw text
+1.Raw text
 
-File path
+2.File path
 
-Web URL
+3.Web URL
 
 Automatically loads a saved model or trains a new one
 
@@ -46,25 +46,25 @@ Fake.csv and True.csv inside the data/ or root project folder
 
 Data Preprocessing:
 
-Converts text to lowercase
+1.Converts text to lowercase
 
-Removes special characters and numbers
+2.Removes special characters and numbers
 
-Applies lemmatization and stopword removal
+3.Applies lemmatization and stopword removal
 
-Tokenizes and pads sequences for model input
+4.Tokenizes and pads sequences for model input
 
 Model Architecture:
 
-Embedding Layer
+1.Embedding Layer
 
-LSTM Layer
+2.LSTM Layer
 
-Dropout Layer
+3.Dropout Layer
 
-Dense Output Layer (Sigmoid Activation)
+4.Dense Output Layer (Sigmoid Activation)
 
-Trained for 5 epochs with batch size of 32
+5.Trained for 5 epochs with batch size of 32
 
 Model Handling:
 
